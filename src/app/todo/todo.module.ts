@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { TodoListItemComponent } from './todo-list-item/todo-list-item.component';
+import { TodoListRxComponent } from './todo-list-rx/todo-list-rx.component';
 
 
 @NgModule({
@@ -13,10 +14,12 @@ import { TodoListItemComponent } from './todo-list-item/todo-list-item.component
     declarations: [
         TodoListComponent,
         TodoListItemComponent,
+        TodoListRxComponent,
     ],
     exports: [
         TodoListComponent,
         TodoListItemComponent,
+        TodoListRxComponent,
     ],
 })
 export class TodoModule {
