@@ -1,0 +1,19 @@
+<div class="TodoList">
+    <div class="TodoList__creation">
+        <input id="add-todo-input" type="text" [(ngModel)]="newTodoBody"/>
+        <button class="TodoList__createNewTodoButton"
+                id="add-todo-button"
+                (click)="addTodo(newTodoBody)">
+            만들기
+        </button>
+    </div>
+
+    <div role="listbox" class="TodoList__items">
+        <app-todo-list-item
+            role="listitem"
+            *ngFor="let todo of todos"
+            (toggle)="toggleTodo(todo)"
+            (remove)="removeTodo(todo)"
+            [todo]="todo"></app-todo-list-item>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="TodoListItem">
+    <label class="TodoListItem__label">
+        <input type="checkbox"
+               (change)="toggleThis()"
+               [checked]="todo.completed">
+        <span class="TodoListItem__body">{{ todo.body }}</span>
+    </label>
+    <button (click)="removeThis()" class="TodoListItem__removeButton">
+        삭제
+    </button>
+</div>
